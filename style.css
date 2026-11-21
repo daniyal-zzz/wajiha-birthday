@@ -1,0 +1,297 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #fff0f5, #ffe0ed, #fff5fa);
+  color: #873c62;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 30px 20px;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+
+.top-label {
+  display: inline-block;
+  padding: 10px 24px;
+  border-radius: 30px;
+  background: #ffffffa8;
+  border: 1px solid #ffc1da;
+  font-size: 11px;
+  letter-spacing: 3px;
+  color: #d15c91;
+  margin-bottom: 35px;
+}
+
+.hero {
+  position: relative;
+  padding: 30px 15px 50px;
+  background: #ffffff75;
+  border: 1px solid #ffffff;
+  border-radius: 35px;
+  box-shadow: 0 15px 50px #df8eae25;
+}
+
+.small-heading {
+  color: #c76b94;
+  font-size: 15px;
+}
+
+h1 {
+  font-family: 'Dancing Script', cursive;
+  font-size: clamp(48px, 9vw, 85px);
+  color: #d94e91;
+  margin-top: 15px;
+  animation: glow 2s infinite alternate;
+}
+
+h2 {
+  font-family: 'Dancing Script', cursive;
+  font-size: clamp(38px, 7vw, 65px);
+  color: #9c4771;
+  margin: 5px 0 15px;
+}
+
+.age {
+  display: inline-block;
+  background: #ffe0ed;
+  padding: 10px 22px;
+  border-radius: 30px;
+  color: #b94b7d;
+  font-size: 14px;
+}
+
+.intro {
+  max-width: 450px;
+  margin: 22px auto;
+  line-height: 1.8;
+  font-size: 14px;
+  color: #97627b;
+}
+
+.flower {
+  position: absolute;
+  font-size: 40px;
+  animation: float 3s ease-in-out infinite;
+}
+
+.flower-one {
+  top: 35px;
+  left: 8%;
+}
+
+.flower-two {
+  top: 130px;
+  right: 8%;
+  animation-delay: 1s;
+}
+
+.flower-three {
+  bottom: 140px;
+  left: 12%;
+  animation-delay: 1.5s;
+}
+
+.cake {
+  width: 180px;
+  height: 160px;
+  margin: 35px auto 25px;
+  position: relative;
+  animation: bounce 2s infinite ease-in-out;
+}
+
+.candles {
+  position: absolute;
+  top: -36px;
+  left: 40px;
+  width: 100px;
+  display: flex;
+  justify-content: space-around;
+  font-size: 30px;
+  z-index: 3;
+  animation: flicker 1s infinite alternate;
+}
+
+.cake-top {
+  position: absolute;
+  top: 18px;
+  left: 20px;
+  width: 140px;
+  height: 35px;
+  background: #ff9cc6;
+  border-radius: 50%;
+  z-index: 2;
+}
+
+.cake-middle {
+  position: absolute;
+  top: 35px;
+  left: 25px;
+  width: 130px;
+  height: 45px;
+  background: #f5a6cb;
+  border-radius: 10px 10px 18px 18px;
+  border-bottom: 9px dotted #fff1f6;
+}
+
+.cake-bottom {
+  position: absolute;
+  top: 75px;
+  left: 10px;
+  width: 160px;
+  height: 55px;
+  background: #d96d9d;
+  border-radius: 10px 10px 20px 20px;
+}
+
+.plate {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 180px;
+  height: 15px;
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 0 5px 10px #c36c9630;
+}
+
+.surprise-btn {
+  border: none;
+  background: linear-gradient(135deg, #ed70a9, #d94c91);
+  color: white;
+  padding: 16px 35px;
+  border-radius: 35px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 8px 20px #d94c9140;
+  transition: .3s;
+}
+
+.surprise-btn:hover {
+  transform: translateY(-5px) scale(1.05);
+  box-shadow: 0 12px 25px #d94c9160;
+}
+
+.hint {
+  font-size: 12px;
+  color: #b77995;
+  margin-top: 18px;
+}
+
+.message-card {
+  display: none;
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 35px 30px;
+  background: #fff9fc;
+  border: 1px solid #ffc5dc;
+  border-radius: 30px;
+  box-shadow: 0 12px 35px #d77ca52b;
+  animation: appear 1s ease;
+}
+
+.message-card.show {
+  display: block;
+}
+
+.message-card h2 {
+  font-size: 42px;
+  margin: 10px 0 25px;
+}
+
+.message-card p {
+  line-height: 2;
+  font-size: 14px;
+  color: #87516b;
+}
+
+.card-flower {
+  font-size: 45px;
+}
+
+.signature {
+  font-family: 'Dancing Script', cursive;
+  color: #d94e91;
+  font-size: 32px;
+  margin-top: 20px;
+}
+
+footer {
+  padding: 30px 10px;
+  font-size: 11px;
+  line-height: 2;
+  color: #b77995;
+}
+
+.floating-elements {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.floating-item {
+  position: absolute;
+  bottom: -50px;
+  animation: rise linear forwards;
+  opacity: .8;
+}
+
+#confetti {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 10;
+}
+
+@keyframes float {
+  50% { transform: translateY(-15px) rotate(10deg); }
+}
+
+@keyframes bounce {
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes glow {
+  from { text-shadow: 0 0 5px #ffb4d4; }
+  to { text-shadow: 0 0 20px #ed77ae; }
+}
+
+@keyframes flicker {
+  from { filter: brightness(1); }
+  to { filter: brightness(1.3); }
+}
+
+@keyframes rise {
+  to {
+    transform: translateY(-110vh) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+@keyframes appear {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media(max-width: 600px) {
+  .container { padding: 18px 12px; }
+  .hero { padding: 35px 10px; }
+  .flower { font-size: 28px; }
+  .message-card { padding: 25px 18px; }
+}
